@@ -1,0 +1,22 @@
+{
+  "name": "super-ads-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "verify": "python3 scripts/verify_studio.py",
+    "browser": "node tests/browser.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/space-grotesk": "5.3.0",
+    "gsap": "3.15.0",
+    "hyperframes": "0.9.15",
+    "playwright": "1.61.1"
+  },
+  "overrides": {
+    "undici": "7.30.1"
+  }
+}

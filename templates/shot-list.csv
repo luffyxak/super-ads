@@ -1,0 +1,6 @@
+shot,time,shot_size,camera,action,line,sound,duration_seconds,notes
+1,0-2s,Close-up,Static,"Hero looks at camera, deadpan",Hook line,Music in,2,Hook frame
+2,2-6s,Wide,Slow push-in,"Setup: chaos / problem appears",Dialogue,Music,4,Setup
+3,6-10s,Medium,Track,"Twist: product / demo",Dialogue / sound effect,Sound effect,4,Twist
+4,10-13s,Close-up,Static,"Payoff: reaction / smile",Payoff line,Music / silence,3,Payoff
+5,13-15s,Close-up product,Static,"Product in hand, CTA text on screen",CTA line,Music out,2,CTA last 3 seconds

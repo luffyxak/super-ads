@@ -1,0 +1,33 @@
+{
+  "$schema": "https://github.com/anthropics/claude-code/blob/main/.claude-plugin/marketplace.schema.json",
+  "name": "super-ads-creator-marketplace",
+  "owner": {
+    "name": "Super Ads Creator contributors",
+    "email": ""
+  },
+  "metadata": {
+    "description": "Marketplace for the Super Ads Creator plugin.",
+    "version": "2.0.0"
+  },
+  "plugins": [
+    {
+      "name": "super-ads-creator",
+      "description": "One-stop social media ad creator: 11 skills, 8 agents, 6 workflows, Diwali and Moonshot playbooks, HyperFrames and Remotion motion guides.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ad-strategy",
+        "./skills/ad-creative-director",
+        "./skills/ad-copywriter-gen-z",
+        "./skills/ad-visual-designer",
+        "./skills/ad-video-director",
+        "./skills/ad-animation-motion",
+        "./skills/ad-realistic-video",
+        "./skills/ad-social-formats",
+        "./skills/ad-diwali-festive",
+        "./skills/ad-brand-safety",
+        "./skills/ad-performance-analyst"
+      ]
+    }
+  ]
+}

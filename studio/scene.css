@@ -1,0 +1,86 @@
+* { box-sizing: border-box; }
+#root {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: StudioSpace, Arial, sans-serif;
+}
+.surface { position: absolute; inset: 0; pointer-events: none; }
+.surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, currentColor 1.4px, transparent 1.6px) 0 0 / 18px 18px;
+  opacity: .16;
+  mask-image: linear-gradient(transparent 42%, #000 97%);
+}
+.backdrop { width: 100%; height: 100%; object-fit: cover; }
+.copy, .art, .caption, .folio, .rule, .bottom-rule { position: absolute; }
+.folio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.folio b { font-weight: inherit; }
+.rule, .bottom-rule { background: currentColor; height: 2px; opacity: .6; }
+.copy { display: grid; align-content: start; gap: 13px; }
+.kicker {
+  font-size: 29px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.headline {
+  margin: 0;
+  font-weight: 700;
+  line-height: .91;
+  letter-spacing: -.07em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+.art {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--panel);
+  border: 2px solid var(--ink);
+}
+.art::before, .art::after {
+  content: "+";
+  position: absolute;
+  z-index: 2;
+  font-size: 35px;
+  line-height: 1;
+  color: var(--panel-ink);
+}
+.art::before { top: 18px; left: 22px; }
+.art::after { right: 22px; bottom: 18px; }
+.art-visual { position: absolute; inset: 0; display: grid; place-items: center; }
+.illustration { display: block; width: 96%; height: 100%; overflow: visible; }
+.placed-image, .placed-video {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.caption {
+  width: max-content;
+  margin: 0;
+  padding: 13px 24px;
+  background: #171628;
+  color: #fff6e2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.13;
+  overflow-wrap: anywhere;
+}

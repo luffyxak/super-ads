@@ -1,0 +1,28 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; text-align: center; font-family: Montserrat, sans-serif; }
+    .product {
+      position: absolute; top: 380px; left: 0; width: 1080px;
+      color: #fff8ec; font-family: "Playfair Display", serif;
+      font-size: 132px; font-weight: 700; line-height: 1.05;
+    }
+    .offer {
+      position: absolute; top: 760px; left: 0; width: 1080px;
+      color: #f5c04e; font-size: 56px; font-weight: 700;
+    }
+  </style>
+  <div id="root" data-composition-id="product" data-width="1080" data-height="1920">
+    <div id="product-title" class="clip" data-start="0" data-duration="3">
+      <div class="product">Gold<br />Bangles</div>
+    </div>
+    <div id="product-offer" class="clip" data-start="0.3" data-duration="2.7">
+      <div class="offer">Flat 20% OFF making charges</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#product-title", { opacity: 0, y: 40, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "power4.out" }, 0);
+    tl.fromTo("#product-offer", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power4.out" }, 0.3);
+    window.__timelines["product"] = tl;
+  </script>
+</template>

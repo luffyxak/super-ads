@@ -1,0 +1,25 @@
+{
+  "name": "super-ads-hyperframes-legacy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "gsap": "3.15.0",
+    "hyperframes": "0.9.15"
+  },
+  "overrides": {
+    "hyperframes": {
+      "undici": "7.30.1"
+    }
+  },
+  "scripts": {
+    "prepare-assets": "node -e \"const fs = require('node:fs'); fs.mkdirSync('assets', {recursive: true}); fs.copyFileSync(require.resolve('gsap/dist/gsap.min.js'), 'assets/gsap.min.js');\"",
+    "postinstall": "npm run prepare-assets",
+    "dev": "hyperframes preview",
+    "lint": "hyperframes lint",
+    "check": "hyperframes check",
+    "snapshot": "hyperframes snapshot",
+    "render": "hyperframes render",
+    "publish": "hyperframes publish"
+  }
+}

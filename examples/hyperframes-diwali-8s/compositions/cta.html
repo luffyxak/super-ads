@@ -1,0 +1,37 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; text-align: center; font-family: Montserrat, sans-serif; }
+    .brand {
+      position: absolute; top: 420px; left: 0; width: 1080px;
+      color: #fff8ec; font-family: "Playfair Display", serif;
+      font-size: 110px; font-weight: 700;
+    }
+    .cta {
+      position: absolute; top: 640px; left: 290px; width: 500px; height: 130px;
+      background: #f5c04e; color: #1c060d; border-radius: 65px;
+      font-size: 56px; font-weight: 700; line-height: 130px;
+    }
+    .cta-sub {
+      position: absolute; top: 820px; left: 0; width: 1080px;
+      color: #fff8ec; font-size: 44px; font-weight: 400; opacity: 0.85;
+    }
+  </style>
+  <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
+    <div id="cta-brand" class="clip" data-start="0" data-duration="2.5">
+      <div class="brand">Test Jewellers</div>
+    </div>
+    <div id="cta-button" class="clip" data-start="0.3" data-duration="2.2">
+      <div class="cta">Shop Now</div>
+    </div>
+    <div id="cta-sub" class="clip" data-start="0.2" data-duration="2.3">
+      <div class="cta-sub">This Diwali, wear the light</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cta-brand", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power4.out" }, 0);
+    tl.fromTo("#cta-button", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.4)" }, 0.3);
+    tl.fromTo("#cta-sub", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out" }, 0.2);
+    window.__timelines["cta"] = tl;
+  </script>
+</template>

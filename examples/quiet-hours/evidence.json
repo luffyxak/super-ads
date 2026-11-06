@@ -1,0 +1,289 @@
+{
+  "campaign": "Quiet Hours (fictional)",
+  "toolchain": {
+    "python": "3.14.5",
+    "node": "26.13.0",
+    "ffmpeg": "8.1",
+    "hyperframes": "0.9.15"
+  },
+  "timing": {
+    "hookSeconds": 0,
+    "payoffCaptionSeconds": 9.133,
+    "ctaSeconds": 12,
+    "durationSeconds": 15
+  },
+  "hookPreviews": {
+    "eviction": {
+      "seconds": 23.092,
+      "rendered": 2,
+      "reused": 0,
+      "sha256": "a8633936e032b4d6f4149bcfecd1ef7d2cfa07efe2a6eef761403c38b324d8ba"
+    },
+    "security": {
+      "seconds": 14.663,
+      "rendered": 1,
+      "reused": 1,
+      "sha256": "b9b829e8b81eabbce11582f7a21af2139e1f464abaffff90d39bff6543dd9133"
+    }
+  },
+  "renderFromHookCache": {
+    "seconds": 108.366,
+    "pictureRendered": 14,
+    "pictureCacheHits": 1
+  },
+  "warmRender": {
+    "seconds": 5.15,
+    "pictureRendered": 0,
+    "pictureCacheHits": 15
+  },
+  "byteIdenticalMasterRerender": true,
+  "media": {
+    "9x16": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 450,
+      "fps": 30,
+      "duration": 15.0,
+      "codec": "h264",
+      "audio": "aac",
+      "decoded": true,
+      "pictureCacheHits": 5,
+      "pictureRendered": 0,
+      "seconds": 5.012,
+      "previewAgreement": [
+        {
+          "shot": "citation",
+          "timeSeconds": 0.0,
+          "snapshotToDecodedSsim": 0.999128
+        },
+        {
+          "shot": "notice",
+          "timeSeconds": 2.4,
+          "snapshotToDecodedSsim": 0.99866
+        },
+        {
+          "shot": "mat",
+          "timeSeconds": 4.8,
+          "snapshotToDecodedSsim": 0.998317
+        },
+        {
+          "shot": "stamp",
+          "timeSeconds": 8.0,
+          "snapshotToDecodedSsim": 0.998284
+        },
+        {
+          "shot": "invitation",
+          "timeSeconds": 12.0,
+          "snapshotToDecodedSsim": 0.998352
+        }
+      ]
+    },
+    "1x1": {
+      "width": 1080,
+      "height": 1080,
+      "frames": 450,
+      "fps": 30,
+      "duration": 15.0,
+      "codec": "h264",
+      "audio": "aac",
+      "decoded": true,
+      "pictureCacheHits": 5,
+      "pictureRendered": 0,
+      "seconds": 2.626,
+      "previewAgreement": [
+        {
+          "shot": "citation",
+          "timeSeconds": 0.0,
+          "snapshotToDecodedSsim": 0.999289
+        },
+        {
+          "shot": "notice",
+          "timeSeconds": 2.4,
+          "snapshotToDecodedSsim": 0.999022
+        },
+        {
+          "shot": "mat",
+          "timeSeconds": 4.8,
+          "snapshotToDecodedSsim": 0.998929
+        },
+        {
+          "shot": "stamp",
+          "timeSeconds": 8.0,
+          "snapshotToDecodedSsim": 0.998676
+        },
+        {
+          "shot": "invitation",
+          "timeSeconds": 12.0,
+          "snapshotToDecodedSsim": 0.998682
+        }
+      ]
+    },
+    "16x9": {
+      "width": 1920,
+      "height": 1080,
+      "frames": 450,
+      "fps": 30,
+      "duration": 15.0,
+      "codec": "h264",
+      "audio": "aac",
+      "decoded": true,
+      "pictureCacheHits": 5,
+      "pictureRendered": 0,
+      "seconds": 3.344,
+      "previewAgreement": [
+        {
+          "shot": "citation",
+          "timeSeconds": 0.0,
+          "snapshotToDecodedSsim": 0.998718
+        },
+        {
+          "shot": "notice",
+          "timeSeconds": 2.4,
+          "snapshotToDecodedSsim": 0.99881
+        },
+        {
+          "shot": "mat",
+          "timeSeconds": 4.8,
+          "snapshotToDecodedSsim": 0.999033
+        },
+        {
+          "shot": "stamp",
+          "timeSeconds": 8.0,
+          "snapshotToDecodedSsim": 0.998532
+        },
+        {
+          "shot": "invitation",
+          "timeSeconds": 12.0,
+          "snapshotToDecodedSsim": 0.998576
+        }
+      ]
+    }
+  },
+  "audio": {
+    "mode": "mixed tracks",
+    "integratedLufs": -14.3,
+    "truePeakDbtp": -2.0,
+    "targetLufs": -14,
+    "maxTruePeakDbtp": -1.2,
+    "targetMet": true
+  },
+  "mastersSha256": {
+    "master-9x16.mp4": "1850834f6b77bea2bd97f82158a2665e823512239050035f4fa63346064f5b1c",
+    "master-1x1.mp4": "1c013e873e9cbef1e66989e81915cd595814b535dfd3b9753b60fa50667db02f",
+    "master-16x9.mp4": "7ccdc628427c2efabe864c147f4f21c09d31485ca11612fa0b50f8b7d3bcb5dd"
+  },
+  "browserMediaVerification": {
+    "pixelChecks": {
+      "planning-marker-0s": 0,
+      "planning-marker-2.9s": 0,
+      "planning-marker-5.6s": 0,
+      "planning-marker-8.6s": 0,
+      "planning-marker-9.6s": 0,
+      "planning-marker-12.5s": 0,
+      "importedPackshotLimePixels": 96,
+      "importedClipLavenderPixels": 14895
+    },
+    "browserPreviewAgreement": [
+      {
+        "format": "9x16",
+        "time": 0,
+        "browserToDecodedSsim": 0.998781
+      },
+      {
+        "format": "9x16",
+        "time": 2.9,
+        "browserToDecodedSsim": 0.998168
+      },
+      {
+        "format": "9x16",
+        "time": 5.6,
+        "browserToDecodedSsim": 0.99758
+      },
+      {
+        "format": "9x16",
+        "time": 8.6,
+        "browserToDecodedSsim": 0.997389
+      },
+      {
+        "format": "9x16",
+        "time": 9.6,
+        "browserToDecodedSsim": 0.997152
+      },
+      {
+        "format": "9x16",
+        "time": 12.5,
+        "browserToDecodedSsim": 0.997469
+      },
+      {
+        "format": "1x1",
+        "time": 0,
+        "browserToDecodedSsim": 0.998733
+      },
+      {
+        "format": "1x1",
+        "time": 9.6,
+        "browserToDecodedSsim": 0.995178
+      },
+      {
+        "format": "16x9",
+        "time": 0,
+        "browserToDecodedSsim": 0.998377
+      },
+      {
+        "format": "16x9",
+        "time": 12.5,
+        "browserToDecodedSsim": 0.997894
+      }
+    ],
+    "browserPlayback": [
+      {
+        "format": "9x16",
+        "duration": 15,
+        "midpointSeek": 7.5,
+        "playedWithSoundEnabled": true,
+        "playedMuted": true
+      },
+      {
+        "format": "1x1",
+        "duration": 15,
+        "midpointSeek": 7.5,
+        "playedWithSoundEnabled": true,
+        "playedMuted": true
+      },
+      {
+        "format": "16x9",
+        "duration": 15,
+        "midpointSeek": 7.5,
+        "playedWithSoundEnabled": true,
+        "playedMuted": true
+      }
+    ]
+  },
+  "retakeOnIsolatedRevision": {
+    "stableShot": "stamp",
+    "sourceClipChanged": true,
+    "handoffSelfContained": true,
+    "inFlightCancellationCleaned": true
+  },
+  "retakeRender": {
+    "seconds": 41.853,
+    "pictureRendered": 3,
+    "pictureCacheHits": 12,
+    "audioCacheHit": true
+  },
+  "independentDiagnosticRubric": {
+    "hook": 8,
+    "clarity": 8,
+    "pacing": 7,
+    "craft": 8,
+    "brandFit": 7,
+    "rewatchability": 7
+  },
+  "approval": "Fictional demo technical QA. Human approval pending.",
+  "coldRenderFromCleanSource": {
+    "seconds": 113.566,
+    "pictureRendered": 15,
+    "pictureCacheHits": 0,
+    "mastersMatch": true
+  }
+}

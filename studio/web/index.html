@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="A local production workspace for advertising.">
+  <title>Super Ads Studio</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to workspace</a>
+  <header class="masthead">
+    <a class="wordmark" href="/" aria-label="Super Ads Studio home">
+      <svg aria-hidden="true" width="32" height="32" viewBox="0 0 32 32">
+        <rect width="32" height="32" rx="7" fill="currentColor"></rect>
+        <path d="M18 5 9 17h6l-1 10 9-13h-6z" fill="#171a13"></path>
+      </svg>
+      <span>Super Ads <small>Studio</small></span>
+    </a>
+    <div class="mast-tools">
+      <span class="local-label"><span></span> Local workspace</span>
+      <button class="button secondary" id="new-project" type="button">New campaign</button>
+    </div>
+  </header>
+
+  <div class="studio-shell">
+    <aside class="rail" aria-label="Campaign navigation">
+      <div class="rail-project">
+        <label for="projects" class="eyebrow">Campaign</label>
+        <select id="projects" disabled><option value="">Loading…</option></select>
+        <button type="button" class="text-button" id="load-demo">Load fictional campaign</button>
+      </div>
+      <nav class="studio-nav" aria-label="Studio views">
+        <button type="button" data-view="brief"><span aria-hidden="true">01</span> Brief &amp; brand</button>
+        <button type="button" data-view="storyboard"><span aria-hidden="true">02</span> Storyboard</button>
+        <button type="button" data-view="review"><span aria-hidden="true">03</span> Review</button>
+        <button type="button" data-view="delivery"><span aria-hidden="true">04</span> Delivery</button>
+      </nav>
+      <div id="rail-state" class="rail-state"></div>
+    </aside>
+    <main id="workspace" tabindex="-1">
+      <div class="status-line">
+        <div id="status" role="status"></div>
+        <div id="error" role="alert" hidden></div>
+      </div>
+      <div id="view"><p class="muted">Opening the local workspace…</p></div>
+    </main>
+  </div>
+
+  <dialog id="new-dialog" aria-labelledby="new-title">
+    <form id="new-form">
+      <div class="section-heading"><h2 id="new-title">New campaign</h2><button type="button" id="close-dialog" class="icon-button" aria-label="Close new campaign">×</button></div>
+      <label class="field">Campaign ID<input name="id" autocomplete="off" pattern="[a-z0-9]+(-[a-z0-9]+)*" maxlength="64" required placeholder="spring-launch"></label>
+      <label class="field">Brand<input name="brand" maxlength="120" required></label>
+      <label class="field">Product<input name="product" maxlength="120" required></label>
+      <label class="field">Workflow<select name="workflow">
+        <option value="15s-reel">15-second reel</option>
+        <option value="30s-tvc">30-second TVC</option>
+        <option value="diwali-campaign">Diwali campaign</option>
+        <option value="product-launch">Product launch</option>
+        <option value="ugc-creator">UGC creator</option>
+        <option value="super-bowl-style">Super Bowl-style</option>
+      </select></label>
+      <div id="new-error" role="alert" class="notice error" hidden></div>
+      <button type="submit" class="button primary">Create campaign</button>
+    </form>
+  </dialog>
+</body>
+</html>

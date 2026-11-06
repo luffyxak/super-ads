@@ -1,0 +1,35 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; text-align: center; font-family: Montserrat, sans-serif; }
+    .eyebrow {
+      position: absolute; top: 300px; left: 0; width: 1080px;
+      color: #f5c04e; font-size: 44px; font-weight: 700; letter-spacing: 14px;
+    }
+    .hook {
+      position: absolute; top: 380px; left: 0; width: 1080px;
+      color: #fff8ec; font-family: "Playfair Display", serif;
+      font-size: 150px; font-weight: 700; line-height: 1.05;
+    }
+    .hook-sub {
+      position: absolute; top: 720px; left: 0; width: 1080px;
+      color: #f5c04e; font-size: 52px; font-weight: 600;
+    }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hook-eyebrow" class="clip" data-start="0" data-duration="2.5">
+      <div class="eyebrow">✦ DIWALI ✦</div>
+    </div>
+    <div id="hook-title" class="clip" data-start="0.1" data-duration="2.4">
+      <div class="hook">Gold that<br />glows</div>
+    </div>
+    <div id="hook-sub" class="clip" data-start="0.3" data-duration="2.2">
+      <div class="hook-sub">like the festival itself</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hook-title", { opacity: 0, y: 40, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "power4.out" }, 0.1);
+    tl.fromTo("#hook-sub", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power4.out" }, 0.3);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

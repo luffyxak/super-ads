@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Outputs — rendered video is large, keep it out of git by default
+outputs/*.mp4
+outputs/*.mov
+outputs/**/*.mp4
+outputs/**/*.mov
+outputs/**/render/
+outputs/**/frames/
+*.mp4
+*.mov
+
+# Env and secrets
+.env
+.env.local
+*.key
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs and caches
+*.log
+.cache/
+dist/
+build/
+
+# Studio client state, rendered evidence and third-party runtime copies
+/outputs/
+/.studio/
+**/.hyperframes/
+**/assets/gsap.min.js
+.ruff_cache/

@@ -1,0 +1,19 @@
+{
+  "name": "super-ads-creator",
+  "version": "2.0.0",
+  "description": "One-stop social media ad creator: 11 skills, 8 agents, 6 workflows, Diwali and Moonshot playbooks, HyperFrames and Remotion motion guides, and realistic-video limits for commercial-ready ads.",
+  "author": {
+    "name": "Super Ads Creator contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ads",
+    "social-media",
+    "video",
+    "motion-graphics",
+    "hyperframes",
+    "remotion"
+  ],
+  "homepage": "https://github.com/super-ads-creator/super-ads-creator",
+  "repository": "https://github.com/super-ads-creator/super-ads-creator"
+}
