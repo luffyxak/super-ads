@@ -1,25 +1,42 @@
 # Super Ads Studio
 
-A local-first workspace for turning ad briefs into storyboards, reviewed cuts, and ready-to-share video files.
+Super Ads Studio is a local-first video production workspace for ad creatives,
+editors, and small teams. Keep the campaign brief, storyboard, media, and
+review history together as an idea moves from its first concept to delivery.
+
+The browser editor and CLI share the same projects. You can produce and
+render the included demo without an API key, or use the repository's agent
+guides to bring Claude Code or Codex into the workflow.
+
+[Features](#features) · [Quickstart](#quickstart) · [Documentation](#documentation)
 
 ![Super Ads Studio storyboard showing the Quiet Hours campaign, shot timeline, and editable shot inspector](docs/images/studio-storyboard.png)
 
-*The Quiet Hours storyboard in Super Ads Studio. Quiet Hours is a fictional campaign included with the project.*
+*The included fictional Quiet Hours campaign, open in Storyboard.*
 
-## What you can do
+## Features
 
-- **Plan** a campaign with a brief, concept board, and six production workflows.
-- **Edit** a shot timeline, compare opening hooks, and import images, clips, and audio.
-- **Review** cuts with safe-zone overlays, captions, and timecoded feedback.
-- **Deliver** vertical, square, and landscape MP4s with captions, reports, and approval checks.
+- **Plan the campaign.** Capture the audience, offer, product claims, and
+  supporting proof. Compare concepts and choose a workflow for a reel, TVC,
+  Diwali campaign, product launch, creator UGC, or big-event ad.
+- **Edit shot by shot.** Set timing and captions on the storyboard, compare
+  up to three opening hooks, and bring in images, clips, and audio. Replace a
+  shot while keeping the rest of the timeline in place.
+- **Review the cut.** Play each aspect ratio with safe-zone overlays, add
+  timecoded feedback, and track asset rights and QA. Approval is tied to
+  the reviewed version and its export hashes.
+- **Package the delivery.** Render 1080p H.264 MP4s in vertical (9:16),
+  square (1:1), and landscape (16:9). Export SRT captions, thumbnails,
+  production reports, and a file manifest alongside the cuts.
 
-The browser and CLI share the same local workspace. The demo runs without an API key.
+HyperFrames renders each shot locally. A retake can reuse cached renders
+for the shots you left alone.
 
 ## Quickstart
 
 You’ll need Python 3.11+, Node 22+, and FFmpeg 7+ with `ffprobe` on macOS or Linux.
 
-From the repository root:
+Run these commands from the repository root.
 
 ```bash
 python3 -m venv .venv
@@ -31,17 +48,16 @@ python3 -m studio demo
 python3 -m studio serve
 ```
 
-Open [Studio on your computer](http://127.0.0.1:8765)
-and select **Quiet Hours**. Start in Storyboard to explore the
-five-shot timeline and two opening hooks, or choose **New campaign**
-to start with your own brief.
+After the server starts, open the address printed in your terminal and select
+**Quiet Hours**. The demo includes five editable shots, two opening hooks, and
+original artwork and audio. Choose **New campaign** to start with your own brief.
 
 Projects and imported media are stored under `.studio/`.
 
 <details>
 <summary>CLI rendering and verification</summary>
 
-Preview a hook, render the cuts, and generate the demo report:
+Render a hook preview and save the demo cuts and report.
 
 ```bash
 python3 -m studio hook quiet-hours eviction
@@ -55,7 +71,7 @@ Choose a new destination with `materialize --output` for repeat exports.
 See the [demo guide](examples/quiet-hours/README.md)
 for reproduction steps and measured render results.
 
-Run the local checks:
+Run the local checks with these commands.
 
 ```bash
 python3 scripts/verify_studio.py --doctor
