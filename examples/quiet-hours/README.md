@@ -41,12 +41,12 @@ byte-identical masters. The isolated clip retake rendered three shot instances
 (one per ratio), reused twelve, and reused audio in 41.853 seconds. Reported
 times reflect this machine and cache state.
 
-An independent diagnostic review scored hook 8, clarity 8, pacing 7, craft 8,
-brand fit 7, and rewatchability 7 out of 10. It flagged the square CTA crop
-and noted that the payoff reads as a headline. The final CTA uses the same
-approved packshot as the product beat and shows the entire mat in all ratios.
-The exact final hashes have technical and brand-safety evidence. Independent
-creative approval of those hashes and human approval are pending.
+Independent review passed on the exact final master hashes. The reviewer
+matched all 29 manifest entries and scored hook 8, clarity 8, pacing 7,
+craft 8, brand fit 8, and rewatchability 7 out of 10. The 2.4–4.8s complaint
+repeats the setup and the 9.133s payoff reads as a title. The final CTA shows
+the full approved mat at 12 seconds in all three ratios. Human approval is
+pending.
 
 Rendered masters, working state, downloaded reports and browser captures
 are local outputs. This example has no measured campaign performance.

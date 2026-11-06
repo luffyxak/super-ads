@@ -11,6 +11,6 @@
 | Release | See the [GitHub Actions workflow](https://github.com/luffyxak/super-ads/actions/workflows/validate.yml) for checks on each exact pushed SHA |
 
 For continued work, run the verification command from the root and use a
-disposable workspace for fixture edits and render experiments. The demo has
-technical and brand-safety QA. Final independent creative and human approval
-remain separate. No live provider comparison or campaign launch took place.
+disposable workspace for fixture edits and render experiments. The demo passed
+technical, brand-safety, and independent creative QA. Human approval remains
+pending. No live provider comparison or campaign launch took place.

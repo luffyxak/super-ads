@@ -279,11 +279,33 @@
     "brandFit": 7,
     "rewatchability": 7
   },
-  "approval": "Fictional demo technical QA. Human approval pending.",
+  "approval": "Fictional demo technical and independent QA passed. Human approval pending.",
   "coldRenderFromCleanSource": {
     "seconds": 113.566,
     "pictureRendered": 15,
     "pictureCacheHits": 0,
     "mastersMatch": true
+  },
+  "independentFinalReview": {
+    "verdict": "pass",
+    "manifestEntriesMatched": 29,
+    "reviewedMasterSha256": {
+      "master-16x9.mp4": "7ccdc628427c2efabe864c147f4f21c09d31485ca11612fa0b50f8b7d3bcb5dd",
+      "master-1x1.mp4": "1c013e873e9cbef1e66989e81915cd595814b535dfd3b9753b60fa50667db02f",
+      "master-9x16.mp4": "1850834f6b77bea2bd97f82158a2665e823512239050035f4fa63346064f5b1c"
+    },
+    "scores": {
+      "hook": 8,
+      "clarity": 8,
+      "pacing": 7,
+      "craft": 8,
+      "brandFit": 8,
+      "rewatchability": 7
+    },
+    "notes": [
+      "2.4\u20134.8s repeats the complaint premise.",
+      "9.133s payoff reads as a title.",
+      "12.000s CTA and square packshot are clear."
+    ]
   }
 }
